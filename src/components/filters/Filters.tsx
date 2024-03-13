@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Form, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
-import AddRemoveMultipleInputFields from '../../AddRemoveMultipleInputFields';
+import AddRemoveMultipleInputFields from './AddRemoveMultipleInputFields';
 
 const Filters = () => {
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Form, OverlayTrigger, Row, Tooltip } from 'react-bootstrap';
-import AddRemoveInputFieldsColumns from '../../AddRemoveInputFieldsColumns';
+import AddRemoveInputFieldsColumns from './AddRemoveInputFieldsColumns';
 
 const Columns = () => {
 

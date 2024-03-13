@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Col, Container, Form, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
-import AddRemoveInputField from '../../AddRemoveInputField';
+import AddRemoveInputField from './AddRemoveInputField';
 
 const Aggregation = () => {
 
