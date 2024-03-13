@@ -6,7 +6,7 @@ interface InputField {
   displayTitle: string;
 }
 
-const AddRemoveInputFieldsColumns: React.FC<{ setFormData: any }> = ({ setFormData }) => {
+const AddRemoveInputFieldsColumns: React.FC/* <{ setFormData: any }> */ = (/* { setFormData } */) => {
 
   const [inputFields, setInputFields] = useState<{[key: string]: InputField[]}>({
     availableColumns: [{
@@ -15,13 +15,13 @@ const AddRemoveInputFieldsColumns: React.FC<{ setFormData: any }> = ({ setFormDa
     }]
   });
 
-  useEffect(() => {
+  /* useEffect(() => {
     setFormData((prevData: any) => ({
       ...prevData,
       availableColumns: inputFields,
     }))
     console.log("Input Fields : ", inputFields);
-  }, [inputFields]);
+  }, [inputFields]); */
 
   const addInputField = () => {
     setInputFields(inputFields => ({

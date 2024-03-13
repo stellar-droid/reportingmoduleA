@@ -11,19 +11,19 @@ interface Props {
   setFormData: React.Dispatch<React.SetStateAction<InputField[]>>;
 }
 
-function AddRemoveInputField({ setFormData }: Props) {
+function AddRemoveInputField(/* { setFormData }: Props */) {
 
   const [inputFields, setInputFields] = useState<InputField[]>([
     { email: "" },
   ]);
 
-  useEffect(() => {
-    setFormData((prevData: any) => ({
-      ...prevData,
-      aggregatedColumnsEmail: inputFields
-    }));
-    console.log("Email : ", inputFields);
-  }, [inputFields]);  
+  // useEffect(() => {
+  //   setFormData((prevData: any) => ({
+  //     ...prevData,
+  //     aggregatedColumnsEmail: inputFields
+  //   }));
+  //   console.log("Email : ", inputFields);
+  // }, [inputFields]);
 
   const addInputField = () => {
     setInputFields([...inputFields, { email: "" }]);    
